@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>汤圆的博客小站-博客详情</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0 ;
+        }
+        .header{
+            width: 100%;
+            height: 220px;
+            background: url("{{url_for('static',filename='bg1.jpeg')}}");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        h1{
+            color: #fff;
+            text-align: center;
+            line-height: 220px;
+            margin-top: 0px;
+
+        }
+        .content{
+            width: 400px;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <h1>{{ blog['title'] }}</h1>
+    </div>
+<div class="content">
+    <p>{{ blog['content'] }}</p>
+    <div>
+        <a href="/" class="pull-right">回到首页</a>
+    </div>
+</div>
+</body>
+</html>

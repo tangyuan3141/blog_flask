@@ -1,4 +1,2 @@
-# hello-world
-Hello Everyone.
-I am tangyuan.
-This is first project 'hello-world'.
+# ty_blog_test
+ blog for test
